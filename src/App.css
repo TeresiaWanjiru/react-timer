@@ -1,38 +1,74 @@
-.App {
-  text-align: center;
+body{
+  background-color: #050623;
+  color: #eee;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+main{
+  padding-top: 50px;
+  max-width: 340px;
+  margin: 0 auto;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button{
+  background-color: transparent;
+  color:#d6d6d6;
+  border: 0;
+  display: inline-block;
+  width: 100px;
+  cursor: pointer;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+button.with-text{
+  width: auto;
+  background-color: rgba(255,255,255,0.1);
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 24px;
 }
-
-.App-link {
-  color: #61dafb;
+button.with-text-back{
+  width: auto;
+  background-color: rgba(255,255,255,0.1);
+  padding: 10px 10px;
+  border-radius: 10px;
+  font-size: 18px;
 }
+button.with-text-back svg{
+  width: 22px;
+  margin-right: 5px;
+  float: left;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+button.with-text svg{
+  width: 36px;
+  margin-right: 5px;
+  float: left;
+
+}
+label{
+  display: block;
+}
+/* Slider for time */
+.slider{
+  margin: 0.7rem;
+  height: 20px;
+  border: 2px solid #9e129e;
+  border-radius: 20px;
+}
+.thumb{
+  background-color: #9e129e;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.slider.break{
+  margin: 0.7rem;
+  height: 20px;
+  border: 2px solid #0aadb9;
+  border-radius: 20px;
+}
+.slider.break .thumb{
+  background-color: #0aadb9;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  border-radius: 50%;
 }
